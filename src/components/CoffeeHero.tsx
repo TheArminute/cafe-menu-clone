@@ -1,4 +1,5 @@
-import { Linkedin, Instagram } from 'lucide-react';
+import { Linkedin, Instagram, Menu } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import coffeeBeansBg from '@/assets/coffee-beans-bg.jpg';
 
 const CoffeeHero = () => {
@@ -11,6 +12,26 @@ const CoffeeHero = () => {
         backgroundPosition: 'center'
       }}
     >
+      {/* Header overlay on image */}
+      <div className="absolute top-0 left-0 right-0 z-20 px-4 h-16 flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center">
+          <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-lg">L</span>
+          </div>
+          <div className="mr-3 text-right">
+            <p className="text-xs text-orange-200">لامیز کافی</p>
+            <p className="text-xs font-bold text-white">LAMIZ COFFEE</p>
+          </div>
+        </div>
+
+        {/* Burger Menu */}
+        <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 md:hidden">
+          <Menu className="h-5 w-5" />
+        </Button>
+      </div>
+
+      {/* Main content */}
       <div className="container mx-auto px-4 text-center z-10">
         <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white">
           منوی قهوه امیز

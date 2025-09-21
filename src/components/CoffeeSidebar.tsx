@@ -28,6 +28,9 @@ const CoffeeSidebar = () => {
                 src={item.image}
                 alt={item.name}
                 className="w-full h-full object-cover rounded-full"
+                loading="lazy"
+                width={48}
+                height={48}
               />
             </div>
           </div>

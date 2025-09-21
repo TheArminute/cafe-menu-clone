@@ -8,40 +8,40 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 248 12% 97%;
-    --foreground: 30 25% 15%;
+    --background: 45 35% 96%;
+    --foreground: 20 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 30 25% 15%;
+    --card: 45 25% 98%;
+    --card-foreground: 20 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 30 25% 15%;
+    --popover: 45 25% 98%;
+    --popover-foreground: 20 25% 15%;
 
-    --primary: 25 95% 53%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 25 60% 35%;
+    --primary-foreground: 45 35% 95%;
 
-    --secondary: 30 8% 92%;
-    --secondary-foreground: 30 25% 15%;
+    --secondary: 45 20% 90%;
+    --secondary-foreground: 20 25% 15%;
 
-    --muted: 30 8% 92%;
+    --muted: 45 15% 92%;
     --muted-foreground: 30 12% 45%;
 
-    --accent: 35 45% 85%;
-    --accent-foreground: 30 25% 15%;
+    --accent: 40 25% 88%;
+    --accent-foreground: 20 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 8% 88%;
-    --input: 30 8% 88%;
-    --ring: 25 95% 53%;
+    --border: 45 15% 85%;
+    --input: 45 15% 85%;
+    --ring: 25 60% 35%;
 
-    /* Coffee Theme Colors */
-    --coffee-dark: 25 35% 12%;
-    --coffee-medium: 30 45% 25%;
-    --coffee-light: 35 35% 45%;
-    --coffee-cream: 45 25% 88%;
-    --coffee-beans: 20 25% 8%;
+    /* Creamy Chocolate Coffee Theme Colors */
+    --coffee-dark: 25 45% 20%;
+    --coffee-medium: 30 35% 30%;
+    --coffee-light: 35 25% 50%;
+    --coffee-cream: 45 30% 92%;
+    --coffee-beans: 20 35% 12%;
     
     /* Coffee Gradients */
     --gradient-coffee: linear-gradient(135deg, hsl(var(--coffee-beans)), hsl(var(--coffee-dark)));
@@ -57,59 +57,59 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 45 25% 98%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-foreground: 20 25% 15%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary: 25 60% 35%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-primary-foreground: 45 35% 95%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent: 45 15% 92%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent-foreground: 20 25% 15%;
 
-    --sidebar-border: 220 13% 91%;
+    --sidebar-border: 45 15% 85%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 25 60% 35%;
   }
 
   .dark {
-    --background: 25 35% 12%;
-    --foreground: 45 25% 88%;
+    --background: 25 45% 8%;
+    --foreground: 45 30% 92%;
 
-    --card: 30 45% 15%;
-    --card-foreground: 45 25% 88%;
+    --card: 25 35% 12%;
+    --card-foreground: 45 30% 92%;
 
-    --popover: 30 45% 15%;
-    --popover-foreground: 45 25% 88%;
+    --popover: 25 35% 12%;
+    --popover-foreground: 45 30% 92%;
 
-    --primary: 25 95% 53%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 35 50% 55%;
+    --primary-foreground: 25 45% 8%;
 
-    --secondary: 30 25% 20%;
-    --secondary-foreground: 45 25% 88%;
+    --secondary: 25 25% 18%;
+    --secondary-foreground: 45 30% 92%;
 
-    --muted: 30 25% 20%;
+    --muted: 25 25% 18%;
     --muted-foreground: 35 15% 65%;
 
-    --accent: 30 25% 20%;
-    --accent-foreground: 45 25% 88%;
+    --accent: 30 20% 22%;
+    --accent-foreground: 45 30% 92%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 45 25% 88%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 45 30% 92%;
 
-    --border: 30 25% 20%;
-    --input: 30 25% 20%;
-    --ring: 25 95% 53%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 25 25% 18%;
+    --input: 25 25% 18%;
+    --ring: 35 50% 55%;
+    --sidebar-background: 25 35% 12%;
+    --sidebar-foreground: 45 30% 92%;
+    --sidebar-primary: 35 50% 55%;
+    --sidebar-primary-foreground: 25 45% 8%;
+    --sidebar-accent: 25 25% 18%;
+    --sidebar-accent-foreground: 45 30% 92%;
+    --sidebar-border: 25 25% 18%;
+    --sidebar-ring: 35 50% 55%;
   }
 }
 

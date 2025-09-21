@@ -25,9 +25,9 @@ const coffeeItems = [
 
 const CoffeeMenu = () => {
   return (
-    <main className="flex-1 p-4 md:p-6 overflow-y-auto">
+    <main className="flex-1 p-3 md:p-4 lg:p-6 overflow-y-auto">
       <div className="max-w-4xl mx-auto">
-        <div className="space-y-4 md:space-y-6">
+        <div className="space-y-3 md:space-y-4 lg:space-y-6">
           {coffeeItems.map((item, index) => (
             <CoffeeCard
               key={index}

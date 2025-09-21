@@ -28,6 +28,10 @@ const CoffeeCard = ({
               src={image}
               alt={persianName}
               className="w-full h-full object-cover"
+              loading="lazy"
+              width={96}
+              height={96}
+              sizes="(min-width: 768px) 96px, 80px"
             />
           </div>
           

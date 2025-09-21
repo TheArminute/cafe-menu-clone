@@ -11,7 +11,7 @@ const coffeeItems = [
     englishName: 'ESPRESSO',
     singlePrice: '۴۸,۰۰۰',
     doublePrice: '۹۸,۰۰۰',
-    description: 'محدودیت: تحضیرات معادل ۳۰ میلی‌لیتر و جمت شات معادل ۶۰ میلی‌لیتر این معیار قابل تغییر و تطبیق خواهد بود'
+    description: '100 ربوستا'
   },
   {
     image: macchiatoImg,

@@ -25,19 +25,21 @@ const coffeeItems = [
 
 const CoffeeMenu = () => {
   return (
-    <main className="flex-1 p-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {coffeeItems.map((item, index) => (
-          <CoffeeCard
-            key={index}
-            image={item.image}
-            persianName={item.persianName}
-            englishName={item.englishName}
-            singlePrice={item.singlePrice}
-            doublePrice={item.doublePrice}
-            description={item.description}
-          />
-        ))}
+    <main className="flex-1 p-4 md:p-6 overflow-y-auto">
+      <div className="max-w-4xl mx-auto">
+        <div className="space-y-4 md:space-y-6">
+          {coffeeItems.map((item, index) => (
+            <CoffeeCard
+              key={index}
+              image={item.image}
+              persianName={item.persianName}
+              englishName={item.englishName}
+              singlePrice={item.singlePrice}
+              doublePrice={item.doublePrice}
+              description={item.description}
+            />
+          ))}
+        </div>
       </div>
     </main>
   );

@@ -15,23 +15,21 @@ const sidebarItems = [
 
 const CoffeeSidebar = () => {
   return (
-    <aside className="w-full md:w-64 bg-accent/30 p-4">
-      <div className="space-y-4">
+    <aside className="hidden md:flex md:flex-col w-16 bg-background border-l border-border py-4">
+      <div className="flex flex-col items-center space-y-4">
         {sidebarItems.map((item, index) => (
           <div 
             key={index}
-            className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent/50 transition-colors cursor-pointer"
+            className="group flex flex-col items-center cursor-pointer"
+            title={item.name}
           >
-            <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-1 shadow-sm">
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-accent/20 p-2 group-hover:bg-accent/40 transition-colors">
               <img 
                 src={item.image}
                 alt={item.name}
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
-            <span className="text-sm font-medium text-coffee-medium">
-              {item.name}
-            </span>
           </div>
         ))}
       </div>

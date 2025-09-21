@@ -18,38 +18,50 @@ const CoffeeCard = ({
   description 
 }: CoffeeCardProps) => {
   return (
-    <Card className="coffee-card bg-card border-border overflow-hidden">
-      <CardContent className="p-6">
-        <div className="flex flex-col items-center text-center">
-          <div className="w-32 h-32 mb-6 rounded-full overflow-hidden bg-accent/20 p-2">
+    <Card className="coffee-card bg-card border-0 shadow-sm hover:shadow-md transition-all duration-300">
+      <CardContent className="p-4 md:p-6">
+        {/* Mobile/Tablet optimized layout */}
+        <div className="flex items-start gap-4">
+          {/* Coffee Image */}
+          <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-full overflow-hidden bg-accent/10">
             <img 
               src={image}
               alt={persianName}
-              className="w-full h-full object-cover rounded-full"
+              className="w-full h-full object-cover"
             />
           </div>
           
-          <h3 className="text-2xl font-bold text-foreground mb-2">
-            {persianName}
-          </h3>
-          <p className="text-sm text-muted-foreground mb-4 uppercase tracking-wide">
-            {englishName}
-          </p>
-          
-          <div className="flex gap-4 mb-4">
-            <div className="price-badge px-4 py-2 rounded-lg text-center">
-              <p className="text-xs text-muted-foreground mb-1">تک شات</p>
-              <p className="font-bold text-coffee-dark">{singlePrice}</p>
+          {/* Content */}
+          <div className="flex-1 min-w-0">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-4">
+              {/* Title & English Name */}
+              <div className="text-right">
+                <h3 className="text-lg md:text-xl font-bold text-foreground mb-1">
+                  {persianName}
+                </h3>
+                <p className="text-xs text-muted-foreground uppercase tracking-wide">
+                  {englishName}
+                </p>
+              </div>
+              
+              {/* Prices */}
+              <div className="flex gap-2 flex-shrink-0">
+                <div className="text-center min-w-0">
+                  <p className="text-xs text-muted-foreground">تک شات</p>
+                  <p className="font-bold text-sm text-coffee-dark">{singlePrice}</p>
+                </div>
+                <div className="text-center min-w-0">
+                  <p className="text-xs text-muted-foreground">جفت شات</p>
+                  <p className="font-bold text-sm text-coffee-dark">{doublePrice}</p>
+                </div>
+              </div>
             </div>
-            <div className="price-badge px-4 py-2 rounded-lg text-center">
-              <p className="text-xs text-muted-foreground mb-1">جفت شات</p>
-              <p className="font-bold text-coffee-dark">{doublePrice}</p>
-            </div>
+            
+            {/* Description */}
+            <p className="text-xs text-muted-foreground leading-relaxed mt-3 text-right">
+              {description}
+            </p>
           </div>
-          
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            {description}
-          </p>
         </div>
       </CardContent>
     </Card>

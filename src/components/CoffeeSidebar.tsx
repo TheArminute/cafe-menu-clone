@@ -15,7 +15,7 @@ const sidebarItems = [
 
 const CoffeeSidebar = () => {
   return (
-    <aside className="hidden md:flex md:flex-col w-16 bg-background border-l border-border py-4">
+    <aside className="w-16 bg-background border-r border-border py-4 flex-shrink-0">
       <div className="flex flex-col items-center space-y-4">
         {sidebarItems.map((item, index) => (
           <div 

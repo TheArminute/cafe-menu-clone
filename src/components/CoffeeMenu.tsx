@@ -9,17 +9,17 @@ const coffeeItems = [
     image: espressoImg,
     persianName: 'اسپرسو',
     englishName: 'ESPRESSO',
-    singlePrice: '۴۸,۰۰۰',
-    doublePrice: '۹۸,۰۰۰',
+    singlePrice: '48,000',
+    doublePrice: '98,000',
     description: '100 ربوستا'
   },
   {
     image: macchiatoImg,
-    persianName: 'اسپرسو ماکیاتو',
+    persianName: 'اایس کارامل ماکیاتو',
     englishName: 'ESPRESSO MACCHIATO',
     singlePrice: '۸۶,۰۰۰',
     doublePrice: '۱۰۷,۰۰۰',
-    description: 'محدودیت: اسپرسو لیمیتر با کوم زیاد'
+    description: 'تشکیل شده از قهوه و کارامل'
   }
 ];
 

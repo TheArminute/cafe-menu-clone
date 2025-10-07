@@ -33,6 +33,10 @@ const CoffeeSidebar = () => {
                 height={48}
               />
             </div>
+            {/* متن زیر عکس */}
+            <span className="mt-1 text-[10px] leading-tight text-center text-foreground w-14 whitespace-normal break-words">
+              {item.name}
+            </span>
           </div>
         ))}
       </div>
